@@ -1,0 +1,78 @@
+.service {
+  padding: 113px 0 140.5px;
+  @include mq(sp) {
+    padding: 77.5px 0 0;
+  }
+  .inner {
+    max-width: 1163px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 32px 0 27px;
+    text-align: center;
+    .section-ttl {
+      text-align: left;
+      @include mq(sp) {
+        text-align: center;
+      }
+    }
+    .service-card-wrapper {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 42.5px;
+      @include mq(sp) {
+        display: block;
+      }
+      li {
+        width: per(335, 1104);
+        text-align: left;
+        @include mq(sp) {
+          width: 100%;
+          margin-bottom: 55px;
+        }
+        figure {
+          overflow: hidden;
+          img {
+            transition: 0.5s ease-in-out;
+            position: relative;
+            z-index: -1;
+          }
+        }
+        .card-body {
+          width: per(293, 328);
+          margin: 0 auto;
+          .card-ttl {
+            display: flex;
+            height: 56px;
+            margin-top: -28px;
+            text-align: center;
+            .number {
+              width: per(63, 293);
+              line-height: 56px;
+              font-size: 20px;
+              font-family: "AvenirBlack";
+              background: $lightNavy;
+              color: #fff;
+            }
+            h3 {
+              flex: 1;
+              line-height: 56px;
+              letter-spacing: 0.1263em;
+              font-size: 24px;
+              border: 3px solid $lightNavy;
+              background: #fff;
+            }
+          }
+          .card-txt {
+            margin-top: 30px;
+            color: $gray;
+            line-height: 1.5;
+            letter-spacing: 0.1263em;
+            @include mq(sp) {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

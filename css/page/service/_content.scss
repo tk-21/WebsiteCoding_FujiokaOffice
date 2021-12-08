@@ -1,0 +1,131 @@
+.service-content {
+  border: 15px solid #f2f2f2;
+  padding: 144px 0 93px;
+  @include mq(sp) {
+    padding-top: 100px;
+  }
+  &-inner {
+    max-width: 1117px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .content-list {
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      @include mq(sp) {
+        display: block;
+      }
+      &:not(:last-of-type) {
+        margin-bottom: 116px;
+      }
+      .service-desc {
+        width: per(530, 1077);
+        margin-right: per(65, 1077);
+        @include mq(sp) {
+          width: 100%;
+        }
+        .body {
+          @include mq(sp) {
+            margin-bottom: 30px;
+          }
+          p {
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.2075em;
+            color: #888888;
+            @include mq(sp) {
+              line-height: 2;
+            }
+          }
+          .first-child {
+            margin-bottom: 2em;
+          }
+        }
+      }
+      .service-menu {
+        background: #fafafa;
+        padding: 64px 0 56px;
+        width: 477px;
+        text-align: center;
+        @include mq(sp) {
+          width: 100%;
+        }
+        &-ttl {
+          width: fit-content;
+          margin: 0 auto 50px;
+          font-size: 20px;
+          letter-spacing: 0.2075em;
+          color: $navy;
+          position: relative;
+          @include mq(sp) {
+            font-size: 16px;
+            margin-bottom: 30px;
+          }
+          &::before {
+            content: "“";
+            display: inline-block;
+            font-family: "游ゴシック", YuGothic;
+            font-size: 64px;
+            color: rgba(32, 32, 55, 0.21);
+            position: absolute;
+            top: -60%;
+            left: -25%;
+            @include mq(sp) {
+              font-size: 48px;
+            }
+          }
+          &::after {
+            content: "”";
+            display: inline-block;
+            font-family: "游ゴシック", YuGothic;
+            font-size: 64px;
+            color: rgba(32, 32, 55, 0.21);
+            position: absolute;
+            top: -40%;
+            right: -30%;
+            @include mq(sp) {
+              font-size: 48px;
+            }
+          }
+        }
+        ul {
+          text-align: left;
+          list-style: disc;
+          margin: 0 0 30px 100px;
+          @include mq(sp) {
+            width: fit-content;
+            margin: 0 auto 30px;
+          }
+          li {
+            font-size: 14px;
+            line-height: 2;
+            letter-spacing: 0.2075em;
+            color: #888888;
+          }
+        }
+      }
+      .service-menu-03 {
+        background: #fafafa;
+        padding: 42px 0 54px;
+        text-align: center;
+        width: 477px;
+        @include mq(sp) {
+          width: 100%;
+        }
+        .service-menu-txt {
+          font-size: 20px;
+          line-height: 1.55;
+          letter-spacing: 0.2075em;
+          color: $navy;
+          margin-bottom: 39px;
+          @include mq(sp) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}

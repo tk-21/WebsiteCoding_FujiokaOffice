@@ -1,0 +1,8 @@
+.slider {
+  img {
+    object-fit: cover;
+    @include mq(sp) {
+      height: 464px;
+    }
+  }
+}

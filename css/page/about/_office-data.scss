@@ -1,0 +1,68 @@
+.office-data {
+  padding: 161px 0 133px;
+  background: #fafafa;
+  @include mq(sp) {
+    padding: 80px 0 100px;
+  }
+  &-inner {
+    max-width: 922px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    @include mq(sp) {
+      display: block;
+    }
+    .sp-ttl {
+      display: none;
+      @include mq(sp) {
+        display: block;
+        font-size: 28px;
+        letter-spacing: 0.1263em;
+        color: #212f41;
+        font-family: "AvenirHeavy";
+        margin-bottom: 53px;
+      }
+    }
+    figure {
+      width: per(443, 882);
+      @include mq(sp) {
+        width: 100%;
+        margin-bottom: 60px;
+      }
+    }
+    .office-data-body {
+      width: 350px;
+      @include mq(sp) {
+        width: 100%;
+      }
+      .pc-ttl {
+        font-size: 36px;
+        letter-spacing: 0.1263em;
+        color: #212f41;
+        font-family: "AvenirHeavy";
+        margin-bottom: 53px;
+        @include mq(sp) {
+          display: none;
+        }
+      }
+      dl {
+        font-size: 20px;
+        letter-spacing: 0.1263em;
+        color: #505050;
+        @include mq(sp) {
+          font-size: 16px;
+        }
+        dt {
+          float: left;
+          margin-bottom: 27px;
+        }
+        dd {
+          margin-bottom: 27px;
+        }
+      }
+    }
+  }
+}

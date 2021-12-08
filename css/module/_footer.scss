@@ -1,0 +1,21 @@
+.footer {
+  padding-top: 160.7px;
+  text-align: center;
+  @include mq(sp) {
+    padding-top: 95px;
+  }
+  p {
+    font-size: 20px;
+    letter-spacing: 0.1263em;
+    margin-bottom: 50px;
+    color: #252525;
+    @include mq(sp) {
+      line-height: 1.5;
+    }
+  }
+  .bottom {
+    height: 165px;
+    width: 100%;
+    background: $navy;
+  }
+}

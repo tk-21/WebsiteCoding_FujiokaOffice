@@ -1,0 +1,36 @@
+.line {
+  width: per(1104);
+  height: 1px;
+  margin: 0 auto;
+  background: #e2e2e2;
+  @include mq(sp) {
+    display: none;
+  }
+}
+
+.top-blog {
+  padding: 115.5px 0 214px;
+  @include mq(sp) {
+    padding: 174px 0;
+  }
+  .inner {
+    max-width: 1161px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 28px 0 29px;
+    text-align: center;
+    .section-ttl {
+      margin-bottom: 40px;
+      text-align: left;
+      @include mq(sp) {
+        text-align: center;
+      }
+    }
+    .detail-btn {
+      margin-top: 85px;
+      @include mq(sp) {
+        margin-top: 47px;
+      }
+    }
+  }
+}

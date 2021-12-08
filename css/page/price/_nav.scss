@@ -1,0 +1,47 @@
+.price-nav {
+  display: flex;
+  text-align: center;
+  li {
+    height: 106px;
+    flex: 1;
+    font-size: 24px;
+    letter-spacing: 0.1263em;
+    color: #212138;
+    border-bottom: 1px solid $navy;
+    @include mq(sp) {
+      height: 80px;
+      font-size: 16px;
+    }
+    a {
+      width: 100%;
+      height: 100%;
+      padding-top: 29px;
+      position: relative;
+      transition: 0.5s ease;
+      @include mq(sp) {
+        padding-top: 15px;
+      }
+      &::after {
+        content: "";
+        width: 17px;
+        height: 17px;
+        border: 0px;
+        border-bottom: solid 4px #212138;
+        border-right: solid 4px #212138;
+        position: absolute;
+        bottom: 23px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+        transition: 0.5s ease;
+      }
+      &:hover {
+        background: #212138;
+        color: #fff;
+        &::after {
+          border-color: #fff;
+          transform: translate(-50%, 5px) rotate(45deg);
+        }
+      }
+    }
+  }
+}

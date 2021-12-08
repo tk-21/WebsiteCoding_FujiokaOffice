@@ -1,0 +1,38 @@
+.section-ttl {
+  font-size: 48px;
+  font-family: "AvenirBlack";
+  letter-spacing: 0.1263em;
+  color: $gray;
+  margin: 0 0 57px 5px;
+  @include mq(sp) {
+    font-size: 24px;
+    margin: 0 0 32.5px 0;
+  }
+}
+.list-ttl {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  letter-spacing: 0.1263em;
+  margin-bottom: 30px;
+  @include mq(sp) {
+    font-size: 20px;
+  }
+  .num {
+    width: 93px;
+    height: 77px;
+    background: $navy;
+    color: #fff;
+    font-family: "AvenirBlack";
+    margin-right: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mq(sp) {
+      margin-right: 30px;
+    }
+  }
+  h2 {
+    color: #212138;
+  }
+}

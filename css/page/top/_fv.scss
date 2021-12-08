@@ -1,0 +1,34 @@
+.fv-top {
+  position: relative;
+  @include mq(sp) {
+    margin: 65px 0 31.5px;
+  }
+  .main-copy {
+    position: absolute;
+    top: vw(248);
+    left: vw(131);
+    width: vw(715);
+    @include mq(sp) {
+      top: 157px;
+      left: 17px;
+      width: per(311, 375);
+    }
+    .en-copy {
+      margin-bottom: vw(53.5);
+      @include mq(sp) {
+        margin-bottom: 33px;
+      }
+    }
+    .jp-copy {
+      font-size: vw(24);
+      font-weight: bold;
+      letter-spacing: 0.08em;
+      color: #fff;
+      @include mq(sp) {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.08em;
+      }
+    }
+  }
+}

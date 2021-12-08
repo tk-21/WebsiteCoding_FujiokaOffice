@@ -1,0 +1,87 @@
+.about-concept {
+  padding-bottom: 129px;
+  @include mq(sp) {
+    padding-bottom: 60px;
+  }
+  &-inner {
+    max-width: 1037px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    .concept-lead {
+      color: #434343;
+      margin: -199px 0 88px;
+      background: #fafafa;
+      padding: 75px per(46) 87px per(114);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      @include mq(sp) {
+        display: block;
+        padding: 40px 20px 45px;
+        margin: -110px 0 60px;
+      }
+      h2 {
+        font-family: "AvenirHeavy";
+        font-size: 36px;
+        letter-spacing: 0.2075em;
+        @include mq(sp) {
+          text-align: center;
+          font-size: 26px;
+          line-height: 1.5;
+          margin-bottom: 25px;
+        }
+      }
+      p {
+        font-size: 20px;
+        letter-spacing: 0.08458em;
+        line-height: 2;
+        width: per(415, 837);
+        @include mq(sp) {
+          width: 100%;
+          font-size: 14px;
+        }
+      }
+    }
+    h3 {
+      font-size: 24px;
+      letter-spacing: 0.08458em;
+      margin-bottom: 36px;
+      color: #2b2b2b;
+      @include mq(sp) {
+        font-size: 20px;
+      }
+    }
+    .concept-content {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      line-height: 2;
+      letter-spacing: 0.1263em;
+      color: #474747;
+      @include mq(sp) {
+        display: block;
+      }
+      .txt {
+        width: per(470, 997);
+        @include mq(sp) {
+          width: 100%;
+        }
+      }
+      .txt-left {
+        p:first-child {
+          margin-bottom: 2em;
+          @include mq(sp) {
+            margin-bottom: 1em;
+          }
+        }
+        p {
+          @include mq(sp) {
+            margin-bottom: 1em;
+          }
+        }
+      }
+    }
+  }
+}
